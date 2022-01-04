@@ -54,8 +54,8 @@ N = 3
       # Definição de Memória/CPU / Memory/CPU definition
       node.vm.provider :virtualbox do |swarm|
         swarm.name = "#$MACHINE-#{i}"
-        swarm.customize ["modifyvm", :id, "--cpuexecutioncap", "20",
-        "--memory", "512"]
+        swarm.customize ["modifyvm", :id, "--cpuexecutioncap", "30",
+        "--memory", "1024"]
       end                      
     end
   end
